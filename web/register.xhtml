@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+ 
+<h:body>
+<h:form>
+<tr>
+<td>
+First Name:
+</td>
+<td>
+<h:inputText id="fname" required="true"
+requiredMessage="Enter the First name"></h:inputText>
+</td>
+<td>
+<h:message for="fname" style=" color: red"></h:message>
+</td>
+</tr>
+<tr>
+<td>
+Last Name:
+</td>
+<td>
+<h:inputText id="lname" required="true"
+requiredMessage="Enter the Last name"></h:inputText>
+</td>
+<td>
+<h:message for="lname" style=" color: red"></h:message>
+</td>
+</tr>
+<tr>
+<td>
+Gender:
+</td>
+<td>
+<h:selectOneRadio id="gender" required="true" requiredMessage="Select the Gender">
+<f:selectItem itemValue="m" itemLabel="Male" ></f:selectItem>
+<f:selectItem itemValue="f" itemLabel="Female" ></f:selectItem>
+</h:selectOneRadio>
+
+</td>
+<td>
+<h:message for="gender" style=" color: red"></h:message>
+</td>
+</tr>
+<tr>
+<td>
+Contact number:
+</td>
+<td>
+<h:inputText id="contact" required="true"
+requiredMessage="Enter the Contact number"></h:inputText>
+</td>
+<td>
+<h:message for="contact" style="color: red"></h:message>
+
+</td>
+</tr>
+<tr>
+<td>
+Address:
+</td>
+<td>
+<h:inputText id="address" required="true"
+requiredMessage="Enter the Address"></h:inputText>
+</td>
+<td>
+<h:message for="address" style="color: red"></h:message>
+</td>
+</tr>
+<tr>
+<td>
+Email Id:
+</td>
+<td>
+<h:inputText id="email" required="true"
+requiredMessage="Enter the Email Id"></h:inputText>
+</td>
+<td>
+<h:message for="email" style=" color: red"></h:message>
+</td>
+</tr>
+<tr>
+<td>
+<h:commandButton value="Submit"></h:commandButton>
+</td>
+<td>
+<h:commandButton value="Reset" type="Reset"></h:commandButton>
+</td>
+</tr>
+
+</h:form>
+</h:body>
+</html>
+
+
